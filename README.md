@@ -1,7 +1,7 @@
 ## 笔记
 
 - [数据呈现测试注意事项及方法](./Resource/数据呈现测试方法.svg)
-- [Pycharm 导出 python 项目的依赖项](./笔记/Pycharm 导出 python 项目的依赖项.md)
+- [Pycharm 导出 python 项目的依赖项](./笔记/Pycharm导出python项目的依赖项.md)
 
 ## 自动化测试
 
