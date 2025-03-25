@@ -6,7 +6,7 @@
 
 ## 测试用例
 
-- [登录测试需求分析思维导图](./Resource/账号登录.xmind)
+- [登录测试需求分析](./Resource/账号登录.png) - [思维导图](./Resource/账号登录.xmind)
 - [登录测试用例](./Resource/登录测试用例.xlsx)
 - [接口测试用例设计思路](./Resource/接口测试用例设计思路.jpg)
 - [通用功能用例](./Resource/通用功能用例.xlsx)
