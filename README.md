@@ -8,9 +8,9 @@
 
 - [登录测试需求分析](./Resource/账号登录.png) - [思维导图](./Resource/账号登录.xmind)
 - [登录测试用例](./Resource/登录测试用例.xlsx)
-- [接口测试用例设计思路](./Resource/接口测试用例设计思路.jpg) - [思维导图](./Resource/接口测试用例设计思路.xmind)
 - [通用功能用例](./Resource/通用功能用例.xlsx)
 - [编写有效的测试用例](./Resource/编写有效的测试用例.jpg) - [思维导图](./Resource/编写有效的测试用例.xmind)
+- [接口测试用例设计思路](./Resource/接口测试用例设计思路.jpg) - [思维导图](./Resource/接口测试用例设计思路.xmind)
 
 ## 自动化测试
 
