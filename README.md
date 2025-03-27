@@ -14,6 +14,12 @@
 - [接口测试用例设计思路](./Resource/接口测试用例设计思路.jpg) - [思维导图](./Resource/接口测试用例设计思路.xmind)
 - [测试用例注意事项](./笔记/测试用例注意事项.md)
 
+## 测试计划/报告
+
+- [测试计划](./Resource/系统测试计划.docx)
+- [测试报告模板](./Resource/测试报告.doc)
+- [性能测试报告](./Resource/性能测试报告.doc)
+
 ## 自动化测试
 
 - [Python + PyTest + Allure 接口自动化测试框架 + Demo + 连接 mysql 数据验证](https://github.com/DaisyXuYanRu/system_api_autotest)
@@ -24,3 +30,9 @@
 - [测试基础](./笔记/测试基础.md)
 - [Linux](./笔记/Linux.md)
 - [数据库](./笔记/数据库.md)
+- [功能性测试](./笔记/功能性测试.md)
+  - [HTTP 网络协议](./笔记/HTTP网络协议.md)
+  - 抓包工具 教程 问 `DeepSeek\chartGPT\等`
+    - fiddler
+    - Charles Proxy
+    - ​Chrome DevTools / Firefox Developer Tools
