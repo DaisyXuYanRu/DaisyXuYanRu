@@ -37,7 +37,8 @@
     - Charles Proxy
     - ​Chrome DevTools / Firefox Developer Tools
   - [APP 项目测试](./笔记/APP项目测试.md)
-- [python 基础知识](./笔记/python基础知识.md)
+- python
+  - [IDE 环境 & 基础](./笔记/Python/IDE环境&基础.md)
 - 接口测试 - to do
 - 小程序测试 - to do
 - 性能测试 - to do
