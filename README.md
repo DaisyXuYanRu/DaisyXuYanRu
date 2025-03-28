@@ -32,7 +32,8 @@
 - [数据库](./笔记/数据库.md)
 - [功能性测试](./笔记/功能性测试.md)
   - [HTTP 网络协议](./笔记/HTTP网络协议.md)
-  - 抓包工具 教程 问 `DeepSeek\chartGPT\等`
+  - 抓包工具 HTTPS 需要安装证书。测试环境 开发环境基本是 http 内网。 `教程 问DeepSeek\chartGPT\等`
     - fiddler
     - Charles Proxy
     - ​Chrome DevTools / Firefox Developer Tools
+  - [APP 项目测试](./笔记/APP项目测试.md)
