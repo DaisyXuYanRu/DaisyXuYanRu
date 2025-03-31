@@ -44,7 +44,4 @@
   - [面向对象](./笔记/Python/面向对象.md)
   - [文件&异常](./笔记/Python/文件-异常.md)
   - [unittest](./笔记/Python/unittest.md)
-- 接口测试 - to do
-- 小程序测试 - to do
-- 性能测试 - to do
-- UI 自动化测试 - to do
+- [微信小程序测试](./笔记/微信小程序测试.md)
