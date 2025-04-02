@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>&#x6027;&#x80fd;&#x6d4b;&#x8bd5;&#x7684;&#x7406;&#x8bba;</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h3 id="性能测试的理论">性能测试的理论</h3>
+<h4 id="性能测试的概念">性能测试的概念</h4>
+<ul>
+<li>
+<p>性能测试概念：使用自动化工具，模拟不同的场景，对软件各项性能指标进行测试和评估的过程</p>
+</li>
+<li>
+<p>性能测试：验证软件系统是否满足业务需求场景，主要焦点是业务场景的满足(<strong>时间</strong>、<strong>资源</strong>)</p>
+<ul>
+<li>时间: 系统处理用户请求的响应时间</li>
+<li>资源: 系统运行过程中，系统资源的消耗情况</li>
+</ul>
+</li>
+<li>
+<p>性能测试的目的</p>
+<ul>
+<li>评估当前系统能力</li>
+<li>寻找性能瓶颈，优化性能</li>
+<li>评估软件是否能够满足未来的需要</li>
+</ul>
+</li>
+<li>
+<p>性能测试和功能测试</p>
+<ul>
+<li>功能测试:验证系统的功能需求规格。焦点:功能(正向、逆向)</li>
+<li>性能测试:验证系统的业务需求场景。焦点:时间、资源</li>
+</ul>
+</li>
+<li>
+<p>功能测试和性能测试有什么关系</p>
+<ul>
+<li>一般项目中，先功能测试通过后，后进行性能测试</li>
+</ul>
+</li>
+</ul>
+<h4 id="性能测试的策略">性能测试的策略</h4>
+<ul>
+<li>负载测试:<code>逐步增加负载，找到满足系统性能指标情况下的系统最大负载量</code>
+<ul>
+<li>系统<em>最大负载量达到用户要求时</em>，系统才能正式上线使用。</li>
+</ul>
+</li>
+<li>稳定性测试:<code>在服务器稳定运行(用户正常的业务负载下)的情况下进行长时间测试(1天-1周等)，并最终保证服务器能满足线上业务需求</code></li>
+<li>压力测试:<code>高负载下，查看系统在峰值情况下的容错能力和可恢复能力</code>
+<ul>
+<li><code>极限负载</code>情况下的破坏性压力测试</li>
+<li><code>高负载下</code>的长时间的稳定性压力测试</li>
+</ul>
+</li>
+<li>并发测试:<code>极短的时间内，发送大量请求，验证并发处理能力</code>
+<ul>
+<li>特定活动场景，如：抢红包、秒杀、抢购等</li>
+</ul>
+</li>
+</ul>
+<h4 id="性能测试的指标">性能测试的指标</h4>
+<ul>
+<li>
+<p>响应时间</p>
+<ul>
+<li>说明：响应时间指用户从客户端发起一个请求开始，到客户端接收到从服务器端返回的结果，整个过程所耗费的时间。</li>
+<li>组成：<code>响应时间 = 网络时间 + 应用程序处理时间</code></li>
+</ul>
+</li>
+<li>
+<p>并发数 ：同一时间向服务器发送请求的用户数</p>
+</li>
+<li>
+<p>吞吐量 ：指的是<strong>单位时间内</strong>处理的客户端<strong>请求数量</strong>,直接体现软件系统的性能承载能力</p>
+<ul>
+<li>TPS<code>每秒事务/业务数</code> ---- <code>一个事务可以对应一个请求/多个请求</code>
+<ul>
+<li>计算：TPS = 并发数/平均响应时间</li>
+</ul>
+</li>
+<li>QPS:<code>每秒查询数</code></li>
+<li>一个业务对应一个请求时： TPS = QPS</li>
+<li>一个业务对应 n 个请求时： QPS = n * TPS</li>
+</ul>
+</li>
+<li>
+<p>点击数： 所有的页面元素(如:图片、链接、框架等)的请求总数量</p>
+</li>
+<li>
+<p>错误率： 指系统在负载情况下，失败业务的概率</p>
+<ul>
+<li>错误率是性能指标，是高负载下的失败业务的概率</li>
+<li>随机 bug 是功能 bug，先解决随机 bug 才能进行性能测试</li>
+</ul>
+</li>
+<li>
+<p>资源利用率</p>
+<ul>
+<li>系统各种资源的使用情况，<strong>资源的使用量/总的资源可用量 x100%</strong></li>
+<li>常见资源指标有哪些
+<ul>
+<li>CPU 使用率:不高于 75%-85%</li>
+<li>内存(大小)使用率:不高于 80%</li>
+<li>磁盘 10(速率):不高于 90%</li>
+<li>网络(速率):不高于 80%</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="性能测试的流程">性能测试的流程</h4>
+<ul>
+<li>
+<p>性能测试需求分析： 熟悉需求，获取性能需求指标</p>
+</li>
+<li>
+<p>性能测试计划及方案：测什么，谁来测、怎么测</p>
+<ul>
+<li>测试的目的和范围</li>
+<li>测试人员和分工</li>
+<li>测试时间安排</li>
+<li>测试的方法</li>
+</ul>
+</li>
+<li>
+<p>性能测试用例设计：用来验证系统是否符合需求
+<img src="file:///e:\DaisyXuYanRu\笔记\性能测试\%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AE%BE%E8%AE%A1.png" alt="性能测试用例设计"></p>
+</li>
+<li>
+<p>性能测试执行： 建立测试环境、编写测试脚本、性能测试监控、执行测试脚本</p>
+</li>
+<li>
+<p>性能分析和调优：分析性能结果，针对性能 bug 调优</p>
+</li>
+<li>
+<p>性能测试报告总结：测试结果总结</p>
+</li>
+</ul>
+
+            
+            
+        </body>
+        </html>
