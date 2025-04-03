@@ -226,7 +226,7 @@
 3. 配置数据库连接信息 `添加方式：测试计划 --> 线程组--> (右键添加) 配置元件 --> JDBC Connection Configuration`
 4. 参数介绍：
    - Variable Name: mysql 数据库连接池名称（JDBC 请求时要引用）
-   - Database URL: jdbc:mysql://localhost:3306/tpshop2.0
+   - Database URL: jdbc:mysql://localhost:3306/数据库名称
      - 组成：协议 + 数据库 IP + 数据库端口+ 连接的数据库名称
    - JDBC DRIVER class: com.mysql.jdbc.Driver（MySQL 驱动包位置固定格式 —— 下拉框选择）
    - Username: root(连接数据库用户名，如实填写)
