@@ -24,7 +24,7 @@
 ## 自动化测试
 
 - [Python + PyTest + Allure 接口自动化测试框架 + Demo + 连接 mysql 数据验证](https://github.com/DaisyXuYanRu/system_api_autotest)
-- [Python + PyTest + Allure + Selenium3 web 自动化测试框架 - to do](https://github.com/DaisyXuYanRu/system_autotest)
+- [Python + PyTest + Allure + Selenium3 web 自动化测试框架](https://github.com/DaisyXuYanRu/system_autotest)
 
 ## 测试知识点
 
