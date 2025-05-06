@@ -64,3 +64,4 @@
 - [centos7 设置虚拟内存](./笔记/centos7设置虚拟内存.md)
 - [Jenkins](./笔记/Jenkins.md)
 - [HTTP 缓存](./笔记/缓存.md)
+- [Linux](./笔记/Linux.md)
